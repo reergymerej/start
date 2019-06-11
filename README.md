@@ -32,7 +32,6 @@ start-project new-idea some-cool-template
 
 ```sh
 git clone git@github.com:reergymerej/start.git start-project
-cd start-project
 cp start-project/main.sh /usr/local/bin/start-project
 rm -rf start-project
 ```
