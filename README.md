@@ -40,8 +40,6 @@ start template node-tape node-willy
 
 ## Details
 
-Configurations should be stored in `~/.startrc`.  This will tell us where
-templates are stored.
 
 
 This is all very Git-y.  Let's just lean on Git initially.
@@ -55,6 +53,9 @@ a new instance.
 
 
 ## Future Options
+
+* Configurations should be stored in `~/.startrc`.  This will tell us where
+  templates are stored.
 
 * Good UX: https://codeburst.io/13-tips-tricks-for-writing-shell-scripts-with-awesome-ux-19a525ae05ae
 
