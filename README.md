@@ -30,8 +30,13 @@ start-project new-idea some-cool-template
 
 ## Installation
 
+```sh
+git clone git@github.com:reergymerej/start.git
+cd start
+cp start/main.sh /usr/local/bin/start-project
+rm -rf start
+```
 
-/usr/local/bin/
 
 
 
