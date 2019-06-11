@@ -1,61 +1,46 @@
 # Start
 
-It's fun to make lots of projects.  The more you do it, the more you start to
-tailor them.  This tools will allow you to
+This tools will allow you to
 
-* easily customize your projects
-* easily create new instances of projects
-
-There are a _lot_ of options for how you may create a project.  Instead of
-dictating some type of hierarchy, keep a single list of templates.  Allow a way
-to clone an existing setup.
-
-## Use Case
-
-I have template projects for:
-
-* node-jest
-* react-jest
-* node-tape
-* elm
-* elm-watch
-* elixir
-* phoenix
-
-I want to start a new project to work on Node with Tape.
+* create project templates
+* create new instances of projects based on templates
 
 ```sh
-start node-tape hello-app
+start-project hello-app node-tape
 # creates a new project `hello-app` based on the `node-tape` template
 ```
 
-I decide to start using willy instead.
+
+
+
+## Creating Templates
+
+* Create a Git project in `~/.start-project/templates/`.
+* Add `PROJECT_NAME` anywhere you want the new project's name to go.
+
+
+
+## Using Templates
 
 ```sh
-start template node-tape node-willy
-# creates a new template `node-willy` based on the `node-tape` template
+start-project new-idea some-cool-template
+# creates a new project `new-idea` based on `some-cool-template`
 ```
 
 
-
-## Details
-
+## Installation
 
 
-This is all very Git-y.  Let's just lean on Git initially.
+/usr/local/bin/
 
 
-When creating a new template, we need to git init.
-
-When creating a template, PROJECT_NAME indicates what to replace when creating
-a new instance.
 
 
+---
 
 ## Future Options
 
-* Configurations should be stored in `~/.startrc`.  This will tell us where
-  templates are stored.
+* Configurations should be stored in `~/.start-project/config`.
 
 * Good UX: https://codeburst.io/13-tips-tricks-for-writing-shell-scripts-with-awesome-ux-19a525ae05ae
 
@@ -65,11 +50,16 @@ a new instance.
 
 
 ```sh
-start update node-jest .
+start-project update node-jest .
 # update the `node-jest` template to match the current dir
 ```
 
 ```sh
-start list
+start-project list
 # list templates
+```
+
+```sh
+start-project template node-tape node-willy
+# creates a new template `node-willy` based on the `node-tape` template
 ```
