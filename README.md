@@ -1,9 +1,7 @@
-# Start
+# start-project
 
-This tools will allow you to
+Allows you to quickly create new projects based off local templates.
 
-* create project templates
-* create new instances of projects based on templates
 
 ```sh
 start-project hello-app node-tape
@@ -12,15 +10,17 @@ start-project hello-app node-tape
 
 
 
+## Usage
 
-## Creating Templates
+### Templates
 
 * Create a Git project in `~/.start-project/templates/`.
 * Add `PROJECT_NAME` anywhere you want the new project's name to go.
 
 
 
-## Using Templates
+
+### New Projects
 
 ```sh
 start-project new-idea some-cool-template
@@ -31,17 +31,21 @@ start-project new-idea some-cool-template
 ## Installation
 
 ```sh
-git clone git@github.com:reergymerej/start.git
-cd start
-cp start/main.sh /usr/local/bin/start-project
-rm -rf start
+git clone git@github.com:reergymerej/start.git start-project
+cd start-project
+cp start-project/main.sh /usr/local/bin/start-project
+rm -rf start-project
 ```
 
 
+### Dependencies
+
+* [Ag](https://github.com/ggreer/the_silver_searcher)
+* [Git](https://git-scm.com/)
 
 
 
----
+
 
 ## Future Options
 
@@ -52,6 +56,8 @@ rm -rf start
 * Post-clone setup instructions (ex: yarn install)
 
 * Retain ref to template project so clones can pull in changes later.
+
+* Ag alternatives, sed?
 
 
 ```sh
