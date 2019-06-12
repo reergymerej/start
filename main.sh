@@ -12,7 +12,7 @@ if [ -z $DESTINATION ]; then
 fi
 
 if [ $1 = "--version" ]; then
-  echo "1.3.1"
+  echo "1.4.0"
   exit 0
 fi
 
