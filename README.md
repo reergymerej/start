@@ -47,7 +47,6 @@ start-project --version
 curl -o- https://raw.githubusercontent.com/reergymerej/start/master/install.sh | bash
 ```
 
-t
 ### Dependencies
 
 * [Ag](https://github.com/ggreer/the_silver_searcher)
