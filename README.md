@@ -44,12 +44,10 @@ start-project --version
 ## Installation
 
 ```sh
-git clone git@github.com:reergymerej/start.git start-project
-cp start-project/main.sh /usr/local/bin/start-project
-rm -rf start-project
+curl -o- https://raw.githubusercontent.com/reergymerej/start/master/install.sh | bash
 ```
 
-
+t
 ### Dependencies
 
 * [Ag](https://github.com/ggreer/the_silver_searcher)
