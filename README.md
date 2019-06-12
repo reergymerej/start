@@ -54,35 +54,3 @@ rm -rf start-project
 
 * [Ag](https://github.com/ggreer/the_silver_searcher)
 * [Git](https://git-scm.com/)
-
-
-
-
-
-## Future Options
-
-* Configurations should be stored in `~/.start-project/config`.
-
-* Good UX: https://codeburst.io/13-tips-tricks-for-writing-shell-scripts-with-awesome-ux-19a525ae05ae
-
-* Post-clone setup instructions (ex: yarn install)
-
-* Retain ref to template project so clones can pull in changes later.
-
-* Ag alternatives, sed?
-
-
-```sh
-start-project update node-jest .
-# update the `node-jest` template to match the current dir
-```
-
-```sh
-start-project list
-# list templates
-```
-
-```sh
-start-project template node-tape node-willy
-# creates a new template `node-willy` based on the `node-tape` template
-```
