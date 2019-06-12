@@ -28,6 +28,13 @@ start-project new-idea some-cool-template
 ```
 
 
+
+```sh
+start-project --version
+# prints version
+```
+
+
 ## Installation
 
 ```sh

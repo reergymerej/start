@@ -2,6 +2,7 @@
 
 # echo "Let's start a project"
 
+
 DESTINATION=$1
 TEMPLATE=$2
 
@@ -9,6 +10,12 @@ if [ -z $DESTINATION ]; then
   echo "What is the name of the new project?"
   exit 1
 fi
+
+if [ $1 = "--version" ]; then
+  echo "1.2.0"
+  exit 0
+fi
+
 
 # echo "  based on $TEMPLATE"
 
