@@ -17,6 +17,12 @@ start-project hello-app node-tape
 * Create a Git project in `~/.start-project/templates/`.
 * Add `PROJECT_NAME` anywhere you want the new project's name to go.
 
+You can also use remote projects via symbolic links.
+
+```sh
+ln -s git@github.com:kondor6c/go.git ~/.start-project/templates/go
+```
+
 
 
 
