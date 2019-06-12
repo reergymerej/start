@@ -10,18 +10,21 @@ if [ -z $DESTINATION ]; then
   exit 1
 fi
 
-# You need to specify the template.
-if [ -z $TEMPLATE ]; then
-  echo "You must specify the template."
-  exit 1
-fi
-
 # echo "  based on $TEMPLATE"
 
 # Where are the templates stored?
 # TODO: Make this configurable by reading from .rc.
 TEMPLATE_DIR=~/.start-project/templates/
 mkdir -p $TEMPLATE_DIR
+
+# You need to specify the template.
+if [ -z $TEMPLATE ]; then
+  echo "You must specify the template."
+
+  # list available
+  ls $TEMPLATE_DIR
+  exit 1
+fi
 
 # Can we find this template?
 TEMPLATE_PATH=$TEMPLATE_DIR$TEMPLATE
